@@ -1,0 +1,9 @@
+AWS Web Server Setup Instructions:
+
+1. Launch a Windows Server EC2 instance.
+2. Allow ports 80 (HTTP) and 3389 (RDP) in the security group.
+3. RDP into the instance and install IIS via Server Manager.
+4. Place index.html into C:\inetpub\wwwroot\
+5. Create a CloudFront distribution pointing to the EC2 instance's public IP.
+6. Assign an IAM role with least privilege.
+7. Enable AWS CloudTrail to monitor activity.
